@@ -1,0 +1,169 @@
+/* Geral */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  color: #333;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url(/src/images/pexels-singkham-1108572.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+button {
+  background: #fdfdfd;
+  color: #102f5e;
+  border: 2px solid #201f5e;
+  padding: 0.3em 0.6em;
+  cursor: pointer;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+input,
+select {
+  padding: 0.25em 0.5em;
+}
+
+.hide {
+  display: none;
+}
+
+.bi-check-lg:hover,
+.bi-plus-lg:hover {
+  background: #008000;
+  color: #fff;
+}
+
+.bi-pencil:hover {
+  background: orange;
+  color: #fff;
+}
+
+#cancel-edit-btn {
+  margin-top: 1em;
+}
+
+.bi-trash3:hover,
+#cancel-edit-btn:hover,
+.bi-eraser:hover {
+  background: #ff0000;
+  color: #fff;
+}
+
+/* Cabeçalho da lista */
+.list-container {
+  max-width: 450px;
+  margin: 3em auto;
+  padding: 1.5em;
+  border-radius: 20px;
+  background: #fdfdfd;
+}
+
+.list-container header {
+  text-align: center;
+  padding: 0 1em 1em;
+  border-bottom: 2px solid #ccc;
+}
+
+#list-form input,
+#edit-form input {
+  width: 100%;
+}
+
+#list-form,
+#edit-form {
+  padding: 1em;
+  border-bottom: 2px solid #ccc;
+}
+
+#list-form,
+#edit-form p {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.form-control {
+  display: flex;
+}
+
+.form-control input {
+  margin-right: 0.3em;
+}
+
+/* barra de ferramentas */
+#toolbar {
+  padding: 1em;
+  border-bottom: 2px solid #ccc;
+  display: flex;
+}
+
+#toolbar h4 {
+  margin-bottom: 0.5em;
+}
+
+#search {
+  border-right: 2px solid #ccc;
+  padding-right: 1em;
+  margin-right: 1em;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+#search form {
+  display: flex;
+}
+
+#search input {
+  width: 100%;
+  margin-right: 0.3em;
+}
+
+#filter {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+#filter select {
+  flex: 1;
+}
+
+/* Lista do usuario */
+.todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+  border-bottom: 2px solid rgb(165, 133, 133);
+  transition: 0.3s;
+}
+
+.todo h3 {
+  flex: 1;
+  font-size: 1em;
+}
+
+.todo button {
+  margin-left: 0.4em;
+}
+
+.done {
+  background: #201b2c;
+}
+
+.done h3 {
+  color: #fff;
+  text-decoration: line-through;
+  font-style: italic;
+}
